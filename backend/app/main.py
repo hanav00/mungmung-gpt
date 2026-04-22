@@ -8,6 +8,7 @@ from __future__ import annotations
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
+from app.api import translate as translate_api
 from app.config import CORS_ORIGINS
 from app.models.schemas import HealthResponse
 
@@ -24,6 +25,8 @@ app.add_middleware(
     allow_headers=["*"],
     allow_credentials=True,
 )
+
+app.include_router(translate_api.router)
 
 
 @app.get("/health", response_model=HealthResponse)
