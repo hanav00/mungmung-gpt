@@ -1,0 +1,43 @@
+# === Python ===
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# === Node / Next.js ===
+node_modules/
+.next/
+out/
+.turbo/
+*.tsbuildinfo
+next-env.d.ts
+
+# === 환경 변수 / 시크릿 ===
+.env
+.env.local
+.env.*.local
+*.key
+*.pem
+
+# === 로컬 데이터 (일기장, Chroma DB 등) ===
+backend/app/data/chroma/
+backend/app/data/*.db
+backend/app/data/uploads/
+
+# === OS ===
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# === IDE ===
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# === 에디터/로컬 툴 설정 ===
+.claude/
