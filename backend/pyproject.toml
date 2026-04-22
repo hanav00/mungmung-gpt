@@ -4,8 +4,10 @@ version = "0.1.0"
 description = "강아지 표정 통역기 — 사진 업로드 + 페르소나 기반 내면 독백 생성"
 requires-python = ">=3.11"
 dependencies = [
+    "chromadb>=1.5.8",
     "fastapi>=0.136.0",
     "langchain>=1.2.15",
+    "langchain-chroma>=1.1.0",
     "langchain-core>=1.3.0",
     "langchain-openai>=1.1.16",
     "pillow>=12.2.0",
