@@ -1,6 +1,7 @@
 """POST /translate — 멀티파트로 사진+페르소나 받고 SSE로 스트리밍.
 
 SSE 이벤트 포맷:
+  event: meta      data: {"caption": "...", "knowledge": [{"title","meaning"}...]}
   event: token     data: {"text": "<chunk>"}     # 토큰 단위 부분 응답
   event: done      data: {}                       # 정상 종료
   event: error     data: {"message": "..."}       # 에러 시
@@ -50,8 +51,9 @@ async def translate(
 
     async def event_stream() -> AsyncIterator[str]:
         try:
-            async for token in translate_stream(processed, persona):
-                yield _sse_event("token", {"text": token})
+            async for ev in translate_stream(processed, persona):
+                kind = ev.pop("kind")
+                yield _sse_event(kind, ev)
             yield _sse_event("done", {})
         except Exception as exc:
             yield _sse_event("error", {"message": str(exc)})

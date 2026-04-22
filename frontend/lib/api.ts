@@ -3,7 +3,10 @@ import type { PersonaKey } from "./types";
 const API_BASE =
   process.env.NEXT_PUBLIC_API_BASE?.replace(/\/$/, "") ?? "http://localhost:8000";
 
+export type KnowledgeHit = { title: string; meaning: string };
+
 export type TranslateEvent =
+  | { type: "meta"; caption: string; knowledge: KnowledgeHit[] }
   | { type: "token"; text: string }
   | { type: "done" }
   | { type: "error"; message: string };
@@ -63,6 +66,12 @@ function parseSseBlock(raw: string): TranslateEvent | null {
   if (!data) return null;
   try {
     const payload = JSON.parse(data);
+    if (event === "meta")
+      return {
+        type: "meta",
+        caption: payload.caption ?? "",
+        knowledge: payload.knowledge ?? [],
+      };
     if (event === "token") return { type: "token", text: payload.text ?? "" };
     if (event === "done") return { type: "done" };
     if (event === "error")

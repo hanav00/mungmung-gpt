@@ -4,8 +4,9 @@ import { useEffect, useRef, useState } from "react";
 
 import { ImageDropzone } from "@/components/upload/ImageDropzone";
 import { PersonaSelector } from "@/components/upload/PersonaSelector";
+import { KnowledgePanel } from "@/components/result/KnowledgePanel";
 import { TranslationBubble } from "@/components/result/TranslationBubble";
-import { translateStream } from "@/lib/api";
+import { translateStream, type KnowledgeHit } from "@/lib/api";
 import { DEFAULT_PERSONA, type PersonaKey } from "@/lib/types";
 
 export default function Home() {
@@ -14,6 +15,8 @@ export default function Home() {
   const [persona, setPersona] = useState<PersonaKey>(DEFAULT_PERSONA);
 
   const [translation, setTranslation] = useState("");
+  const [caption, setCaption] = useState("");
+  const [knowledge, setKnowledge] = useState<KnowledgeHit[]>([]);
   const [streaming, setStreaming] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
@@ -37,6 +40,8 @@ export default function Home() {
     if (!file || streaming) return;
     setError(null);
     setTranslation("");
+    setCaption("");
+    setKnowledge([]);
     setStreaming(true);
 
     const ctrl = new AbortController();
@@ -44,7 +49,10 @@ export default function Home() {
 
     try {
       for await (const ev of translateStream(file, persona, ctrl.signal)) {
-        if (ev.type === "token") setTranslation((t) => t + ev.text);
+        if (ev.type === "meta") {
+          setCaption(ev.caption);
+          setKnowledge(ev.knowledge);
+        } else if (ev.type === "token") setTranslation((t) => t + ev.text);
         else if (ev.type === "error") setError(ev.message);
         else if (ev.type === "done") break;
       }
@@ -99,12 +107,13 @@ export default function Home() {
         </button>
 
         {(translation || streaming) && (
-          <section className="pt-2">
+          <section className="pt-2 space-y-3">
             <TranslationBubble
               text={translation}
               persona={persona}
               streaming={streaming}
             />
+            <KnowledgePanel caption={caption} knowledge={knowledge} />
           </section>
         )}
 
