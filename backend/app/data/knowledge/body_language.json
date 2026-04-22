@@ -1,0 +1,212 @@
+[
+  {
+    "id": "tail_high_stiff",
+    "category": "tail",
+    "title": "꼬리를 높이 세우고 뻣뻣하게 있음",
+    "meaning": "경계/자신감/긴장",
+    "detail": "꼬리를 수직에 가깝게 세우면 강아지가 우월감이나 경계 상태를 표현한다. 전체적으로 뻣뻣하면 공격 가능성이 있는 긴장이고, 살짝 흔들리면 단순한 관심이나 주의이다."
+  },
+  {
+    "id": "tail_low_tucked",
+    "category": "tail",
+    "title": "꼬리를 다리 사이로 말아 넣음",
+    "meaning": "두려움/복종/스트레스",
+    "detail": "배 아래로 꼬리를 깊이 말아 넣는 것은 명백한 불안·두려움 신호. 낯선 환경, 큰 소리, 꾸중 직후 자주 나타난다."
+  },
+  {
+    "id": "tail_mid_wag_relaxed",
+    "category": "tail",
+    "title": "꼬리를 중간 높이에서 부드럽게 흔듦",
+    "meaning": "편안함/반가움",
+    "detail": "몸 전체가 이완된 상태에서 꼬리가 엉덩이와 함께 좌우로 흔들리면 일반적으로 기쁨과 친근함을 표현한다."
+  },
+  {
+    "id": "tail_wag_fast_whole_body",
+    "category": "tail",
+    "title": "꼬리를 빠르게 흔들며 엉덩이까지 함께 흔듦",
+    "meaning": "매우 흥분/반가움",
+    "detail": "보호자가 귀가했을 때, 산책 직전에 자주 보인다. 흔히 '엉덩이춤'이라 불리는 전신 움직임."
+  },
+  {
+    "id": "tail_wag_right_bias",
+    "category": "tail",
+    "title": "꼬리를 오른쪽으로 치우쳐 흔듦",
+    "meaning": "긍정적 감정",
+    "detail": "연구에 따르면 강아지는 익숙한 사람이나 좋은 자극 앞에서 꼬리를 오른쪽으로 더 크게 흔드는 경향이 있다."
+  },
+  {
+    "id": "tail_wag_left_bias",
+    "category": "tail",
+    "title": "꼬리를 왼쪽으로 치우쳐 흔듦",
+    "meaning": "불편/경계",
+    "detail": "같은 연구에서 낯선 자극이나 불편한 상대 앞에서는 왼쪽 편향 흔들기가 나타났다."
+  },
+  {
+    "id": "ears_forward_alert",
+    "category": "ears",
+    "title": "귀를 앞으로 쫑긋 세움",
+    "meaning": "집중/호기심/경계",
+    "detail": "주의를 끄는 소리나 사물을 향해 귀를 앞쪽으로 최대한 내미는 자세. 놀이나 사냥 본능이 발동된 상태일 수 있다."
+  },
+  {
+    "id": "ears_back_flat",
+    "category": "ears",
+    "title": "귀를 뒤로 납작하게 붙임",
+    "meaning": "복종/두려움/애교",
+    "detail": "보호자에게 애교를 부릴 때도, 겁먹은 상황에서도 나타난다. 전체 몸짓과 눈빛을 함께 봐야 의미가 갈린다."
+  },
+  {
+    "id": "ears_relaxed_natural",
+    "category": "ears",
+    "title": "귀가 자연스러운 기본 위치에 있음",
+    "meaning": "편안함/중립",
+    "detail": "품종별 기본 귀 모양 그대로의 상태. 긴장도 없고 특별한 자극도 없는 이완 상태."
+  },
+  {
+    "id": "ears_side_split",
+    "category": "ears",
+    "title": "한쪽 귀는 앞, 한쪽은 뒤로 비대칭",
+    "meaning": "갈등/주의 분산",
+    "detail": "두 방향에서 동시에 자극이 올 때, 또는 반가움과 경계가 섞였을 때 나타난다."
+  },
+  {
+    "id": "eyes_soft_squint",
+    "category": "eyes",
+    "title": "눈을 부드럽게 가늘게 뜸",
+    "meaning": "애정/편안함",
+    "detail": "고양이의 슬로우 블링크와 비슷한 신호. 보호자와 눈을 맞출 때 자주 보이며 친밀함의 표현."
+  },
+  {
+    "id": "eyes_whale_eye",
+    "category": "eyes",
+    "title": "눈의 흰자위(공막)가 초승달 모양으로 보임",
+    "meaning": "스트레스/불안",
+    "detail": "'웨일 아이(whale eye)'라 불리는 신호. 고개는 돌리지 않은 채 눈만 돌려 흰자가 드러나면 불편함을 참고 있다는 뜻."
+  },
+  {
+    "id": "eyes_hard_stare",
+    "category": "eyes",
+    "title": "눈을 크게 뜨고 고정된 시선",
+    "meaning": "위협/경고",
+    "detail": "특정 대상을 움직이지 않고 오래 응시하면 긴장 고조 신호. 거리를 두는 것이 안전하다."
+  },
+  {
+    "id": "eyes_avoid",
+    "category": "eyes",
+    "title": "시선을 피하고 고개를 돌림",
+    "meaning": "카밍 시그널/불편",
+    "detail": "상대와의 충돌을 피하려는 신호. '나는 너에게 적대감이 없다'는 메시지."
+  },
+  {
+    "id": "mouth_panting_relaxed",
+    "category": "mouth",
+    "title": "입을 벌리고 혀를 자연스럽게 늘어뜨림",
+    "meaning": "편안함/시원함",
+    "detail": "체온 조절과 이완의 일반적 표현. 혀가 길고 느슨하면 긴장이 없는 상태."
+  },
+  {
+    "id": "mouth_closed_tense",
+    "category": "mouth",
+    "title": "입을 꽉 다물고 입꼬리가 경직됨",
+    "meaning": "긴장/경계",
+    "detail": "편안할 때와 달리 입가 근육이 드러난다. 무언가를 관찰·평가 중일 가능성."
+  },
+  {
+    "id": "mouth_lip_lick",
+    "category": "mouth",
+    "title": "혀로 입술을 핥음 (공복이 아닐 때)",
+    "meaning": "카밍 시그널/스트레스",
+    "detail": "먹이 근처가 아닌데 반복적으로 입술을 핥는다면 스트레스 완화 신호일 수 있다."
+  },
+  {
+    "id": "mouth_yawn_context",
+    "category": "mouth",
+    "title": "졸리지 않은 상황에서의 하품",
+    "meaning": "카밍 시그널/긴장 완화",
+    "detail": "긴장된 상황에서 강아지는 하품을 통해 스스로와 상대를 진정시키려 한다."
+  },
+  {
+    "id": "posture_play_bow",
+    "category": "posture",
+    "title": "앞다리는 낮추고 엉덩이는 높이 든 '플레이 바우'",
+    "meaning": "놀이 초대",
+    "detail": "'같이 놀자'라는 명백한 초대 신호. 이어지는 모든 움직임은 놀이로 해석된다는 약속."
+  },
+  {
+    "id": "posture_weight_forward",
+    "category": "posture",
+    "title": "무게중심을 앞발로 실은 자세",
+    "meaning": "관심/추진 의지",
+    "detail": "무언가에 다가가거나 뛰어들 준비. 꼬리·귀 신호와 종합해 긍정/경계를 구분해야 한다."
+  },
+  {
+    "id": "posture_weight_back",
+    "category": "posture",
+    "title": "무게중심을 뒷발로 실은 자세",
+    "meaning": "회피/주저",
+    "detail": "물러서고 싶은 마음. 두려움이거나 상황을 평가 중인 단계."
+  },
+  {
+    "id": "posture_belly_up",
+    "category": "posture",
+    "title": "배를 드러내고 눕는 자세",
+    "meaning": "편안함 또는 복종 (맥락에 따라)",
+    "detail": "꼬리가 흔들리고 표정이 편안하면 '배 문질러줘' 요청. 경직되어 있으면 극단적 복종(스트레스) 신호."
+  },
+  {
+    "id": "posture_freeze",
+    "category": "posture",
+    "title": "움직임이 완전히 멈춘 굳은 자세",
+    "meaning": "강한 긴장/경고",
+    "detail": "프리즈(freeze)는 공격 직전의 중요한 신호. 이 단계에서 상황을 진정시켜야 한다."
+  },
+  {
+    "id": "calming_turn_away",
+    "category": "calming",
+    "title": "고개 또는 몸 전체를 돌려 옆면을 보임",
+    "meaning": "카밍 시그널",
+    "detail": "상대를 진정시키고 자신도 진정하는 신호. 갈등 회피 의사."
+  },
+  {
+    "id": "calming_sniff_ground",
+    "category": "calming",
+    "title": "맥락 없이 갑자기 땅 냄새를 맡음",
+    "meaning": "카밍 시그널/회피",
+    "detail": "긴장된 자리에서 시간 벌기 또는 주의 환기 행동. '나는 관심 없어' 표현."
+  },
+  {
+    "id": "calming_slow_movement",
+    "category": "calming",
+    "title": "천천히 움직이거나 느리게 걸음",
+    "meaning": "카밍 시그널/진정",
+    "detail": "흥분된 상대를 진정시키거나 자신을 안정시키는 움직임."
+  },
+  {
+    "id": "calming_paw_lift",
+    "category": "calming",
+    "title": "앞발을 살짝 들어 올린 채 멈춤",
+    "meaning": "불확실/카밍",
+    "detail": "새 자극을 만났을 때 자주 나타난다. '아직 잘 모르겠어, 잠시만' 정도의 메시지."
+  },
+  {
+    "id": "fur_piloerection",
+    "category": "fur",
+    "title": "등·어깨의 털이 곤두섬 (hackles)",
+    "meaning": "흥분/경계/불안",
+    "detail": "무조건 공격성이 아니라 강한 각성 상태. 원인은 두려움, 흥분, 관심 모두 가능하다."
+  },
+  {
+    "id": "body_shake_off",
+    "category": "body",
+    "title": "털을 터는 듯한 큰 몸 흔듦",
+    "meaning": "리셋/스트레스 해소",
+    "detail": "긴장된 상황이 끝난 직후 자주 보인다. '방금 상황 종료'라는 자기 리셋 동작."
+  },
+  {
+    "id": "body_approach_curve",
+    "category": "body",
+    "title": "상대를 향해 직선이 아닌 곡선으로 접근",
+    "meaning": "예의/진정",
+    "detail": "강아지끼리의 정중한 인사. 직선 돌진은 위협으로 해석될 수 있다."
+  }
+]
