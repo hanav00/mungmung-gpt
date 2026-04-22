@@ -18,9 +18,15 @@ DATA_DIR.mkdir(exist_ok=True)
 
 OPENAI_API_KEY: str = os.getenv("OPENAI_API_KEY", "")
 VISION_MODEL: str = os.getenv("VISION_MODEL", "gpt-4.1-mini")
+EMBEDDING_MODEL: str = os.getenv("EMBEDDING_MODEL", "text-embedding-3-small")
 
 MAX_IMAGE_SIDE: int = int(os.getenv("MAX_IMAGE_SIDE", "1024"))
 JPEG_QUALITY: int = int(os.getenv("JPEG_QUALITY", "85"))
+
+KNOWLEDGE_JSON_PATH: Path = BASE_DIR / "data" / "knowledge" / "body_language.json"
+CHROMA_DIR: Path = DATA_DIR / "chroma"
+KNOWLEDGE_COLLECTION: str = "dog_knowledge"
+RETRIEVE_TOP_K: int = int(os.getenv("RETRIEVE_TOP_K", "5"))
 
 CORS_ORIGINS: list[str] = [
     o.strip()
